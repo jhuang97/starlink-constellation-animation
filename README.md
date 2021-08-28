@@ -11,9 +11,9 @@ Procedure
 3. `get_starlink_launch_info.py` -- Get list of Starlink launches from, err, Wikipedia
 4. `get_starlink_ids.py` -- Make list of NORAD IDs of Starlink launches
 5. `filter_save_tles.py` -- Parse the TLEs, exclude the ones that look bad, and save the remaining TLE data as numpy arrays in .npz files
-6. `load_filtered_tles.py` -- Load some filtered TLE data, propagate using SGP4 propagator, make some plots
-6.1. This requires setting the environment variable `LD_LIBRARY_PATH` to the path to your SGP4 propagator.
-6.2. At this point, you might want to clean the data more. You might also want to adjust `..\input\reference_satellite_1.inp` to your liking (I came up with this by much trial and error).
+6. `load_filtered_tles.py` -- Load some filtered TLE data, propagate using SGP4 propagator, make some plots  
+ 6.1. This requires setting the environment variable `LD_LIBRARY_PATH` to the path to your SGP4 propagator.  
+ 6.2. At this point, you might want to clean the data more. You might also want to adjust `..\input\reference_satellite_1.inp` to your liking (I came up with this by much trial and error).
 7. `make_animation_data.py` -- Make and save the information needed for the animated scatter plots.
 8. `export_animation.py` -- Load the animation data, make the animations, save as .mp4 videos.  This can take hours to run.
 
