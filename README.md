@@ -1,5 +1,5 @@
 # starlink-constellation-animation
-Animated scatter plots of Starlink satellite orbits
+Animated scatter plots of Starlink satellite orbital parameters
 
 I used this code to make this video: https://youtu.be/zYPJtTgS060
 
