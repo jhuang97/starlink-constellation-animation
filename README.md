@@ -16,7 +16,7 @@ Procedure
  6.2. At this point, you might want to clean the data more. You might also want to adjust `..\input\reference_satellite_1.inp` to your liking (I came up with this by much trial and error).
 7. `make_animation_data.py` -- Make and save the information needed for the animated scatter plots.  
  7.1. Also requires setting the environment variable `LD_LIBRARY_PATH` to the path to your SGP4 propagator.
-9. `export_animation.py` -- Load the animation data, make the animations, save as .mp4 videos.  This can take hours to run.
+9. `export_animation.py` -- Load the animation data, make the animations, save as a MP4 video.  This can take hours to run.
 
 ## License
 The code that comes from the SGP4 propagator (`src/AstroUtils.py` and parts of `src/SatProp.py`) are under the SGP4 Open License.  All other code in this repo is released under the license in the following file: [LICENSE](LICENSE).
