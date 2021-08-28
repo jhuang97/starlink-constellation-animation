@@ -19,4 +19,4 @@ Procedure
 9. `export_animation.py` -- Load the animation data, make the animations, save as .mp4 videos.  This can take hours to run.
 
 ## License
-The code that comes from the SGP4 propagator (`AstroUtils.py` and parts of `SatProp.py`) are under the SGP4 Open License.  All other code in this repo is released under this license.
+The code that comes from the SGP4 propagator (`AstroUtils.py` and parts of `SatProp.py`) are under the SGP4 Open License.  All other code in this repo is released under the license in the following file: [LICENSE](LICENSE).
