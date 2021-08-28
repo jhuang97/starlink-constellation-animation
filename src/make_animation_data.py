@@ -172,8 +172,3 @@ for nr in norad_ranges[15:]:
 
 # calculate_data(norad_id_range, n_day_divs, t_start, t_end)
 # print('anim_data_' + norad_id_range + '_day' + str(n_day_divs))
-
-# t_lims = np.array([t_start, t_end])
-# np.savez_compressed('../animation_data_old/test', a=t_lims)
-# loaded = np.load('../animation_data_old/test.npz', allow_pickle=True)
-# print(loaded['a'])
