@@ -1,0 +1,11 @@
+# Linux shell commands for downloading stuff from space-track.org
+
+# login and get session cookie:
+curl -c cookies.txt -b cookies.txt https://www.space-track.org/ajaxauth/login -d 'identity=[email]&password=[password]'
+
+# get all Starlink satellites
+curl --limit-rate 100K --cookie cookies.txt https://www.space-track.org/basicspacedata/query/class/satcat/SATNAME/STARLINK~~/orderby/NORAD_CAT_ID%20ASC/format/json > starlink_satcat_2021-08-27.json
+
+# download TLEs of all Starlink satellites up to 2021-08-27
+# You may have to change the list of NORAD IDs
+curl --limit-rate 100K --cookie cookies.txt "https://www.space-track.org/basicspacedata/query/class/tle/NORAD_CAT_ID/{44235--44294,44713--44772,44914--44973,45044--45103,45178--45237,45360--45419,45531--45590,45657--45716,45730--45787,46027--46083,46117--46174,46325--46384,46532--46591,46670--46729,46739--46798,47122--47181,47349--47408,47413--47422,47548--47607,47620--47679,47722--47781,47787--47846,47860--47919,47977--48036,48092--48151,48276--48335,48353--48412,48428--48487,48553--48604,48638--48697,48879--48881}/orderby/NORAD_CAT_ID%20asc/format/tle/emptyresult/show" -o "starlink_tle_#1.txt"
